@@ -5,20 +5,20 @@ const ThirdSection = () => {
   const boxContent = [
     {
       id: 1,
-      heading: "Self-Esteem",
-      desc: "Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.",
+      heading: "Anxiety & Panic",
+      desc: " Support for constant worry, physical tension, and the feeling of always bracing for something to go wrong.",
       imageUrl: "/3.png",
     },
     {
       id: 2,
-      heading: "Relationships",
-      desc: "Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.",
+      heading: "Trauma & EMDR",
+      desc: "Paced, careful work using evidence-based methods to process single-incident or complex childhood trauma.",
       imageUrl: "/2.png",
     },
     {
       id: 3,
-      heading: "Burnout",
-      desc: "Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.",
+      heading: "Professional Burnout",
+      desc: "A space for entrepreneurs and creatives to slow down and reconnect after years of high internal pressure",
       imageUrl: "/1.png",
     },
   ];

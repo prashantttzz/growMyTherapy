@@ -8,6 +8,7 @@ import FourthSection from "../components/fourth-section";
 import Faqs from "../components/faq";
 import { motion } from "framer-motion";
 import ProffessionalBg from "../components/proffessional-bg";
+import OfficeSection from "@/components/office";
 
 const Homepage = () => {
   return (
@@ -86,6 +87,7 @@ const Homepage = () => {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <OfficeSection/>
       <Faqs />
       <ProffessionalBg />
     </div>
