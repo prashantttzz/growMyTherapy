@@ -10,23 +10,26 @@ import {
 import { motion } from "framer-motion";
 
 const Faqs = () => {
-  const faqs =[
+  const faqs = [
     {
-      title:"Do you take insurance?",
-      desc:"I provide secure telehealth and in-person sessions; please contact me regarding superbills for out-of-network reimbursement.",
+      title: "Do you take insurance?",
+      desc: "I provide secure telehealth and in-person sessions; please contact me regarding superbills for out-of-network reimbursement.",
+      item:"item-1",
     },
     {
-      title:"What are your rates?",
-      desc:"I offer structured, private sessions in a calm environment—reach out for specific fee information.",
+      title: "What are your rates?",
+      desc: "I offer structured, private sessions in a calm environment—reach out for specific fee information.",
+            item:"item-2",
     },
     {
-      title:"Do you have any openings?",
-      desc:" I am currently accepting clients for in-person therapy in Santa Monica and telehealth throughout California",
+      title: "Do you have any openings?",
+      desc: " I am currently accepting clients for in-person therapy in Santa Monica and telehealth throughout California",
+            item:"item-3",
     },
-  ]
+  ];
   return (
     <div className="min-h-screen px-5 md:px-20 py-10 md:py-32 flex gap-10 flex-col md:flex-row items-center justify-center">
-            <motion.div
+      <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
@@ -34,12 +37,7 @@ const Faqs = () => {
         className="w-full md:w-1/2 flex items-center justify-center"
       >
         <div className="w-46 md:w-1/2 max-w-[480px] lg:w-120 overflow-hidden relative h-[260px] md:h-[600px] lg:h-[730px] rounded-t-full">
-          <Image
-            src="/faqs.webp"
-            alt="faqs-image"
-            fill
-            className="object-cover"
-          />
+          <Image src="/4.jpg" alt="faqs-image" fill className="object-cover" />
         </div>
       </motion.div>
 
@@ -75,31 +73,30 @@ const Faqs = () => {
           }}
         >
           <Accordion type="single" collapsible defaultValue="item-1">
-            
-            
-            {["item-1", "item-2", "item-3"].map((item, i) => (
+            {faqs.map((item, i) => (
               <motion.div
-                key={item}
+                key={i}
                 variants={{
                   hidden: { opacity: 0, y: 20 },
                   visible: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.5 }}
               >
-                <AccordionItem value={item} className="border-black border-y">
+                <AccordionItem
+                  value={item.item}
+                  className="border-black border-y"
+                >
                   <AccordionTrigger className="text-3xl md:text-5xl font-normal">
-                    Is it accessible?
+                    {item.title}{" "}
                   </AccordionTrigger>
                   <AccordionContent className="text-lg md:text-xl">
-                    Yes. It adheres to the WAI-ARIA design pattern.
+                    {item.desc}{" "}
                   </AccordionContent>
                 </AccordionItem>
               </motion.div>
             ))}
-
           </Accordion>
         </motion.div>
-
       </motion.div>
     </div>
   );

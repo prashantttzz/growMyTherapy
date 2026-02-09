@@ -33,47 +33,79 @@ const ProffessionalBg = () => {
             My Professional Background
           </motion.h1>
 
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={{
-              hidden: {},
-              visible: {
-                transition: { staggerChildren: 0.15 },
-              },
-            }}
-            className="w-full"
-          >
-            <Accordion type="single" collapsible defaultValue="item-1">
-              {["item-1", "item-2", "item-3"].map((item) => (
-                <motion.div
-                  key={item}
-                  variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <AccordionItem
-                    value={item}
-                    className="border-black border-y"
-                  >
-                    <AccordionTrigger
-                      className="text-lg sm:text-xl md:text-2xl justify-between"
-                      iconPosition="right"
-                    >
-                      Is it accessible?
-                    </AccordionTrigger>
+      <motion.div
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+  variants={{
+    hidden: {},
+    visible: {
+      transition: { staggerChildren: 0.15 },
+    },
+  }}
+  className="w-full"
+>
+  <Accordion type="single" collapsible defaultValue="education">
+    <AccordionItem
+      value="education"
+      className="border-border border-y"
+    >
+      <AccordionTrigger
+        className="text-lg sm:text-xl md:text-2xl justify-between"
+      >
+        Education
+      </AccordionTrigger>
 
-                    <AccordionContent className="text-base sm:text-lg md:text-xl">
-                      Yes. It adheres to the WAI-ARIA design pattern.
-                    </AccordionContent>
-                  </AccordionItem>
-                </motion.div>
-              ))}
-            </Accordion>
-          </motion.div>
+      <AccordionContent className="text-base sm:text-lg md:text-xl leading-relaxed">
+        Dr. Maya Reynolds earned her Doctor of Psychology (PsyD) in Clinical
+        Psychology from an APA-accredited doctoral program. Her training
+        included advanced clinical practicum placements in outpatient mental
+        health clinics, hospital settings, and private practice environments,
+        with a focus on anxiety, trauma, and stress-related disorders.
+      </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem
+      value="certifications"
+      className="border-border border-y"
+    >
+      <AccordionTrigger
+        className="text-lg sm:text-xl md:text-2xl justify-between"
+      >
+        Certifications & Advanced Training
+      </AccordionTrigger>
+
+      <AccordionContent className="text-base sm:text-lg md:text-xl leading-relaxed">
+        Dr. Reynolds has completed advanced training in EMDR for trauma and
+        PTSD, Cognitive Behavioral Therapy (CBT) for anxiety and panic,
+        mindfulness-based interventions, and body-oriented approaches for
+        nervous system regulation. She participates in ongoing professional
+        consultation and continuing education to remain current with
+        evidence-based practices.
+      </AccordionContent>
+    </AccordionItem>
+
+    <AccordionItem
+      value="licensure"
+      className="border-border border-y"
+    >
+      <AccordionTrigger
+        className="text-lg sm:text-xl md:text-2xl justify-between"
+      >
+        Licensure
+      </AccordionTrigger>
+
+      <AccordionContent className="text-base sm:text-lg md:text-xl leading-relaxed">
+        Dr. Maya Reynolds is a Licensed Clinical Psychologist in the State of
+        California. She is authorized to provide in-person therapy in Santa
+        Monica and secure telehealth services to clients located throughout
+        California. Her practice adheres to the ethical guidelines established
+        by the California Board of Psychology.
+      </AccordionContent>
+    </AccordionItem>
+  </Accordion>
+</motion.div>
+
         </div>
       </motion.section>
 

@@ -21,10 +21,10 @@ const Homepage = () => {
             className="w-50 lg:w-150 overflow-hidden relative h-75 sm:h-137.5 lg:h-full rounded-t-full"
           >
             <Image
-              src="/home.webp"
+              src="/bg-new.jpg"
               alt="home-image"
               fill
-              className="object-cover"
+              className=" object-bottom"
             />
           </motion.div>
 

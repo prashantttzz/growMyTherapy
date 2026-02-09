@@ -59,7 +59,7 @@ const SecondSection = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="w-full hidden md:flex rounded-bl-[130px] lg:w-1/2 h-100 sm:h-125 lg:h-full relative overflow-hidden"
       >
-        <Image src="/home2.webp" fill alt="home-2" className="object-cover" />
+        <Image src="/bg-2-new.jpg" fill alt="home-2" className="object-cover" />
       </motion.div>
     </div>
   );

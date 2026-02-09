@@ -17,10 +17,10 @@ const FourthSection = () => {
           className="relative w-full lg:w-1/2 min-h-0 lg:min-h-screen "
         >
           <Image
-            src="/fourthsection.webp"
+            src="/3.jpg"
             alt="fourth-section-image"
             fill
-            className="object-cover rounded-br-[180px]"
+            className="object-cover object-top rounded-br-[180px]"
             priority
           />
         </motion.div>
