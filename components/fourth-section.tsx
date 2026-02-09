@@ -174,7 +174,7 @@ const FourthSection = () => {
           transition={{ delay: 0.2, duration: 0.8 }}
           className="hidden md:flex -ml-10 justify-start p-2 border-2 border-primary rounded-t-full"
         >
-          <div className="relative w-full">
+          <div className="relative w-full mr-10">
             <div className="w-full max-w-[550px] lg:w-130 overflow-hidden relative md:h-[600px] lg:h-[800px] rounded-t-full">
               <Image
                 src="/doctor.png"

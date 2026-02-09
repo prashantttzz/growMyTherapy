@@ -7,19 +7,19 @@ const ThirdSection = () => {
       id: 1,
       heading: "Self-Esteem",
       desc: "Building a strong sense of self-worth is key to living a fulfilled life. Let's work together to bolster your self-esteem.",
-      imageUrl: "/speciality1.webp",
+      imageUrl: "/3.png",
     },
     {
       id: 2,
       heading: "Relationships",
       desc: "Navigating relationships can be complex. I'm here to guide you through these complexities to help you form healthier connections.",
-      imageUrl: "/speciality1.webp",
+      imageUrl: "/2.png",
     },
     {
       id: 3,
       heading: "Burnout",
       desc: "Feeling overwhelmed by your career is more common than you think. Together, we'll identify strategies to manage and prevent burnout.",
-      imageUrl: "/speciality1.webp",
+      imageUrl: "/1.png",
     },
   ];
 

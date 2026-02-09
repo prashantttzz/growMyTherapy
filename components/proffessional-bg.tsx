@@ -123,10 +123,10 @@ const ProffessionalBg = () => {
           
           {[
             <div key="brand" className="flex flex-col items-center md:items-start gap-6 md:gap-10 text-center">
-              <h1 className="text-2xl md:text-5xl font-medium">Lilac Template</h1>
+              <h1 className="text-2xl md:text-5xl font-medium">Dr. Maya Reynolds, PsyD</h1>
               <div className="text-base md:text-2xl space-y-1">
-                <p>123 Example Road</p>
-                <p>Minneapolis, MN</p>
+                <p>123th Street 45 W </p>
+                <p>Santa Monica, CA 90401</p>
               </div>
               <div className="text-base md:text-xl space-y-1">
                 <p>123 Example Road</p>

@@ -10,11 +10,23 @@ import {
 import { motion } from "framer-motion";
 
 const Faqs = () => {
+  const faqs =[
+    {
+      title:"Do you take insurance?",
+      desc:"I provide secure telehealth and in-person sessions; please contact me regarding superbills for out-of-network reimbursement.",
+    },
+    {
+      title:"What are your rates?",
+      desc:"I offer structured, private sessions in a calm environment—reach out for specific fee information.",
+    },
+    {
+      title:"Do you have any openings?",
+      desc:" I am currently accepting clients for in-person therapy in Santa Monica and telehealth throughout California",
+    },
+  ]
   return (
     <div className="min-h-screen px-5 md:px-20 py-10 md:py-32 flex gap-10 flex-col md:flex-row items-center justify-center">
-      
-      {/* IMAGE (soft fade + rise) */}
-      <motion.div
+            <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.4 }}
@@ -31,7 +43,6 @@ const Faqs = () => {
         </div>
       </motion.div>
 
-      {/* CONTENT */}
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -44,7 +55,6 @@ const Faqs = () => {
         }}
         className="w-full flex-1 flex flex-col gap-10 md:gap-15"
       >
-        {/* TITLE */}
         <motion.h1
           variants={{
             hidden: { opacity: 0 },
@@ -56,7 +66,6 @@ const Faqs = () => {
           FAQs
         </motion.h1>
 
-        {/* ACCORDION */}
         <motion.div
           variants={{
             hidden: {},
@@ -66,6 +75,7 @@ const Faqs = () => {
           }}
         >
           <Accordion type="single" collapsible defaultValue="item-1">
+            
             
             {["item-1", "item-2", "item-3"].map((item, i) => (
               <motion.div

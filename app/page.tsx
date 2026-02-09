@@ -48,7 +48,7 @@ const Homepage = () => {
                   visible: { opacity: 1, y: 0 },
                 }}
                 transition={{ duration: 0.7 }}
-                className="text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-medium"
+                className="text-4xl md:text-5xl lg:text-7xl font-medium"
               >
                 Find your <span className="text-primary">Ground.</span>
               </motion.h1>
